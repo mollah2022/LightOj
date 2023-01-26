@@ -6,15 +6,18 @@ int main()
 	cin>>t;
 	while(t--)
 	{
-		int s[100];
-		for(int i=0;i<100;i++)
-		{
-			cin>>s[i];
-			count++;
-
-		}
-		cout<<count<<endl;
-		count=0;
+	
+	  string s1;
+	  cin>>s1;
+	  for(int i=0;i<s1.size();i++)
+	  {
+	  
+	     if(s1[i]!=' ' && s1[i+1]==' ')
+	     	count++;
+	     	  }
+         cout<<count<<endl;
+       
 	}
+	
 	return 0;
 }
